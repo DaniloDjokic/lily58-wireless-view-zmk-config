@@ -75,7 +75,25 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        extra_1 { status = "reserved"; };
+        srb_latin {
+            // ------------------------------------------------------------------------------------------------------------
+            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
+            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
+            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
+            //                     |      |      |      |        |  |       |      |       |       |
+
+            display-name = "SRB Latin";
+            bindings = <
+&kp BACKSPACE     &trans             &trans                &trans                 &trans          &trans                                 &trans       &trans        &trans     &trans    &trans     &kp DEL
+&kp GRAVE         &kp N1             &kp N2                &kp N3                 &kp N4          &kp N5                                 &trans       &kp NUMBER_6  &kp N7     &kp N8    &kp N9     &kp N0
+&kp GRAVE         &kp EXCLAMATION    &kp AT                &kp HASH               &kp DOLLAR      &kp PERCENT                            &trans       &kp LEFT      &kp DOWN   &kp UP    &kp RIGHT  &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans        &trans  &kp KP_PLUS  &kp MINUS     &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                                                           &trans                 &trans          &trans           &kp ESCAPE    &trans  &trans       &trans        &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+};
 
         extra_2 { status = "reserved"; };
 
