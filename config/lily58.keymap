@@ -45,7 +45,7 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &kp PRINTSCREEN  &kp PAGE_UP           &kp PAGE_DOWN    &kp K_MUTE             &kp K_VOLUME_DOWN     &kp K_VOLUME_UP
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &kp PRINTSCREEN  &kp K_BACK            &kp K_FORWARD    &kp K_MUTE             &kp K_VOLUME_DOWN     &kp K_VOLUME_UP
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                 &kp F7           &kp F8                &kp F9           &kp F10                &kp F11               &kp F12
 &kp GRAVE     &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                              &kp TILDE        &kp CARET             &kp AMPS         &kp STAR               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp CAPSLOCK  &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &trans    &kp F12        &kp LEFT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp EQUAL             &kp PIPE
@@ -65,11 +65,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp BACKSPACE  &to 3            &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME              &kp END                                     &kp K_BACK   &kp K_FORWARD  &trans     &trans    &trans     &kp DEL
-&kp GRAVE      &kp N1           &kp N2         &kp N3       &kp N4                &kp N5                                      &trans       &kp NUMBER_6   &kp N7     &kp N8    &kp N9     &kp N0
-&kp GRAVE      &kp EXCLAMATION  &kp AT         &kp HASH     &kp DOLLAR            &kp PERCENT                                 &trans       &kp LEFT       &kp DOWN   &kp UP    &kp RIGHT  &trans
-&trans         &trans           &kp BACKSLASH  &kp PIPE     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &trans  &kp KP_PLUS  &kp MINUS      &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                                               &trans       &trans                &trans          &kp ESCAPE          &trans  &trans       &trans         &trans
+&kp BACKSPACE  &to 3            &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME              &kp END                                     &trans       &trans        &trans     &trans    &trans     &kp DEL
+&kp GRAVE      &kp N1           &kp N2         &kp N3       &kp N4                &kp N5                                      &trans       &kp NUMBER_6  &kp N7     &kp N8    &kp N9     &kp N0
+&kp GRAVE      &kp EXCLAMATION  &kp AT         &kp HASH     &kp DOLLAR            &kp PERCENT                                 &trans       &kp LEFT      &kp DOWN   &kp UP    &kp RIGHT  &trans
+&trans         &kp PIPE         &kp BACKSLASH  &kp PIPE     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &trans  &kp KP_PLUS  &kp MINUS     &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                                               &trans       &trans                &trans          &kp ESCAPE          &trans  &trans       &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
